@@ -1,7 +1,8 @@
 body {
   background-color: #666699;
-  
+  font-family: 'Roboto', sans-serif;
   text-align: center;
+  color: white;
 }
 
 h1 {
@@ -9,6 +10,6 @@ h1 {
 }
 
 p {
-	color: black;
+	/*color: black;*/
   	font-size: 30px;
 }
