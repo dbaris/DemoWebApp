@@ -13,3 +13,7 @@ p {
 	/*color: black;*/
   	font-size: 30px;
 }
+
+#spotifyPlayer {
+	padding: 15px;
+}

@@ -32,6 +32,7 @@ function getWeather(searchQuery) {
   	});
 
 
+
 }
 
 function searchWeather() {
@@ -41,6 +42,7 @@ function searchWeather() {
 
 function weatherCSS(temp, weatherType) {
 	if (weatherType === 'Clear') {
+		$('#icon').html('<img src="../../images/Sun.png"/>');
 		if (temp > 60) {
 			document.body.style.backgroundColor = '#ffe066';
 		} else if (temp > 30) {
@@ -49,8 +51,10 @@ function weatherCSS(temp, weatherType) {
 			document.body.style.backgroundColor = '#d98cb3';
 		}
 	} else if (weatherType === 'Clouds') {
+		$('#icon').html('<img src="../../images/Clouds.png"/>');
 		document.body.style.backgroundColor = '#666699';	
 	} else if (weatherType === 'Rain') {
+		$('#icon').html('<img src="images/Rain.png" alt="rain"/>');
 		document.body.style.backgroundColor = '#336699';
 	} else if (weatherType === 'Snow') {
 		document.body.style.backgroundColor = '#99ccff';
@@ -58,20 +62,21 @@ function weatherCSS(temp, weatherType) {
 	
 }
 
-// function getMusic(temp, weatherType) {
-// 	var url = 	GET "https://api.spotify.com/v1/search?q=tania%20bowra&type=artist"
-
-
-// 	$.ajax(url + $.param(params), {
-// 	    success: function (data) {
-	      	
-// 	    }, error: function (error) {
-// 	    	$('.error-message').text('Error connecting to Spotify server!');
-// 	    }
-//   	});
-
-
-// 	GET "https://api.spotify.com/v1/search?q=tania%20bowra&type=artist"
-// }
+function getMusic(temp, weatherType) {
+	if (weatherType === 'Clear') {
+		if (temp > 60) {
+			$('#spotifyPlayer').html('<iframe src="https://embed.spotify.com/?uri=spotify:user:nanzabananza:playlist:5UetXoViyYLhMwsgkQoCmK" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>');
+		} else if (temp > 30) {
+			
+		} else {
+			
+		}
+	} else if (weatherType === 'Clouds') {
+		
+	} else if (weatherType === 'Rain') {
+		
+	} else if (weatherType === 'Snow') {
+		}
+}
 
 
