@@ -54,6 +54,7 @@ function weatherCSS(temp, weatherType) {
 		$('#icon').html('<img src="../../images/Clouds.png"/>');
 		document.body.style.backgroundColor = '#666699';	
 	} else if (weatherType === 'Rain') {
+		
 		$('#icon').html('<img src="images/Rain.png" alt="rain"/>');
 		document.body.style.backgroundColor = '#336699';
 	} else if (weatherType === 'Snow') {
