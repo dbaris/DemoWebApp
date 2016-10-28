@@ -42,20 +42,15 @@ function searchWeather() {
 
 function weatherCSS(temp, weatherType) {
 	if (weatherType === 'Clear') {
-		$('#icon').html('<img src="../../images/Sun.png"/>');
-		if (temp > 60) {
-			document.body.style.backgroundColor = '#ffe066';
-		} else if (temp > 30) {
-			document.body.style.backgroundColor = '#ff8080';
-		} else {
-			document.body.style.backgroundColor = '#d98cb3';
-		}
+		$('#icon').html('<img src="/../images/Sun.png"/>');
+		document.body.style.backgroundColor = '#ffe066';
+		
 	} else if (weatherType === 'Clouds') {
-		$('#icon').html('<img src="../../images/Clouds.png"/>');
+		$('#icon').html('<img src="/../images/Clouds.png"/>');
 		document.body.style.backgroundColor = '#666699';	
 	} else if (weatherType === 'Rain') {
 		
-		$('#icon').html('<img src="images/Rain.png" alt="rain"/>');
+		$('#icon').html('<img src="../../images/Rain.png" alt="rain"/>');
 		document.body.style.backgroundColor = '#336699';
 	} else if (weatherType === 'Snow') {
 		document.body.style.backgroundColor = '#99ccff';
@@ -66,7 +61,7 @@ function weatherCSS(temp, weatherType) {
 function getMusic(temp, weatherType) {
 	if (weatherType === 'Clear') {
 		if (temp > 60) {
-			$('#spotifyPlayer').html('<iframe src="https://embed.spotify.com/?uri=spotify:user:nanzabananza:playlist:5UetXoViyYLhMwsgkQoCmK" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>');
+			$('#spotifyPlayer').html('<iframe src="https://embed.spotify.com/?uri=spotify:user:nanzabananza:playlist:5UetXoViyYLhMwsgkQoCmK" width="300" height="500" frameborder="0" allowtransparency="true"></iframe>');
 		} else if (temp > 30) {
 			
 		} else {

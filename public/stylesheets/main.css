@@ -1,18 +1,21 @@
 body {
   background-color: #666699;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Grand Hotel', cursive;
+  font-size: 20px;
   text-align: center;
   color: white;
 }
 
-h1 {
-	color: white;
+div.pageCenter{
+	display: inline-block;
 }
 
-p {
-	/*color: black;*/
-  	font-size: 30px;
+
+h1 {
+	color: white;
+	font-size: 60px;
 }
+
 
 #spotifyPlayer {
 	padding: 15px;

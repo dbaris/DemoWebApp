@@ -1,6 +1,6 @@
 {
-  "name": "Build Your First Webapp",
-  "description": "A barebones Node.js app using Express 4",
+  "name": "MusicForYourMood",
+  "description": "A Node.js app using Express 4",
   "repository": "",
   "logo": "",
   "keywords": ["node", "express", "static"],
