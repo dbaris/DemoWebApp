@@ -31,8 +31,6 @@ function getWeather(searchQuery) {
 	    }
   	});
 
-
-
 }
 
 function searchWeather() {
@@ -42,14 +40,13 @@ function searchWeather() {
 
 function weatherCSS(temp, weatherType) {
 	if (weatherType === 'Clear') {
-		$('#icon').html('<img src="/../images/Sun.png"/>');
-		document.body.style.backgroundColor = '#ffe066';
+		$('#icon').html('<img src="/../images/sun2.png"/>');
+		document.body.style.backgroundColor = '#ffd11a';
 		
 	} else if (weatherType === 'Clouds') {
 		$('#icon').html('<img src="/../images/Clouds.png"/>');
 		document.body.style.backgroundColor = '#666699';	
 	} else if (weatherType === 'Rain') {
-		
 		$('#icon').html('<img src="../../images/Rain.png" alt="rain"/>');
 		document.body.style.backgroundColor = '#336699';
 	} else if (weatherType === 'Snow') {
@@ -60,19 +57,15 @@ function weatherCSS(temp, weatherType) {
 
 function getMusic(temp, weatherType) {
 	if (weatherType === 'Clear') {
-		if (temp > 60) {
-			$('#spotifyPlayer').html('<iframe src="https://embed.spotify.com/?uri=spotify:user:nanzabananza:playlist:5UetXoViyYLhMwsgkQoCmK" width="300" height="500" frameborder="0" allowtransparency="true"></iframe>');
-		} else if (temp > 30) {
-			
-		} else {
-			
-		}
+		$('#spotifyPlayer').html('<iframe src="https://embed.spotify.com/?uri=spotify:user:nanzabananza:playlist:5UetXoViyYLhMwsgkQoCmK" width="300" height="400" frameborder="0" allowtransparency="true"></iframe>');
 	} else if (weatherType === 'Clouds') {
-		
+		$('#spotifyPlayer').html('	<iframe src="https://embed.spotify.com/?uri=spotify:user:nanzabananza:playlist:7aWWQhEbJ3Ww0I3ucRLmRB" width="300" height="400" frameborder="0" allowtransparency="true"></iframe>');
 	} else if (weatherType === 'Rain') {
-		
+		$('#spotifyPlayer').html('<iframe src="https://embed.spotify.com/?uri=spotify:user:nanzabananza:playlist:0MYrS5PnbHYR0GREdEXpIv" width="300" height="400" frameborder="0" allowtransparency="true"></iframe>');
 	} else if (weatherType === 'Snow') {
-		}
+		$('#spotifyPlayer').html('<iframe src="https://embed.spotify.com/?uri=spotify:user:nanzabananza:playlist:58LCGWBgr1m6DBaRkdeKZN" width="300" height="400" frameborder="0" allowtransparency="true"></iframe>');
+
+	}
 }
 
 

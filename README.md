@@ -1,6 +1,6 @@
 # Mood Music App
 
-Get ready to dance in the sun, chill in the rain, and frolic through the snow.
+Need some chill vibes to match the dreary day outside? Looking to dance in the sun? Music for Your Mood gives you the perfect playlist for the weather outside at your location. 
 
 Uses OpenWeatherMap and Spotify APIs
 
