@@ -57,13 +57,13 @@ function weatherCSS(temp, weatherType) {
 
 function getMusic(temp, weatherType) {
 	if (weatherType === 'Clear') {
-		$('#spotifyPlayer').html('<iframe src="https://embed.spotify.com/?uri=spotify:user:nanzabananza:playlist:5UetXoViyYLhMwsgkQoCmK" width="300" height="400" frameborder="0" allowtransparency="true"></iframe>');
+		$('#spotifyPlayer').html('<iframe src="https://embed.spotify.com/?uri=spotify:user:nanzabananza:playlist:5UetXoViyYLhMwsgkQoCmK" width="300" height="350" frameborder="0" allowtransparency="true"></iframe>');
 	} else if (weatherType === 'Clouds') {
-		$('#spotifyPlayer').html('	<iframe src="https://embed.spotify.com/?uri=spotify:user:nanzabananza:playlist:7aWWQhEbJ3Ww0I3ucRLmRB" width="300" height="400" frameborder="0" allowtransparency="true"></iframe>');
+		$('#spotifyPlayer').html('	<iframe src="https://embed.spotify.com/?uri=spotify:user:nanzabananza:playlist:7aWWQhEbJ3Ww0I3ucRLmRB" width="300" height="350" frameborder="0" allowtransparency="true"></iframe>');
 	} else if (weatherType === 'Rain') {
-		$('#spotifyPlayer').html('<iframe src="https://embed.spotify.com/?uri=spotify:user:nanzabananza:playlist:0MYrS5PnbHYR0GREdEXpIv" width="300" height="400" frameborder="0" allowtransparency="true"></iframe>');
+		$('#spotifyPlayer').html('<iframe src="https://embed.spotify.com/?uri=spotify:user:nanzabananza:playlist:0MYrS5PnbHYR0GREdEXpIv" width="300" height="350" frameborder="0" allowtransparency="true"></iframe>');
 	} else if (weatherType === 'Snow') {
-		$('#spotifyPlayer').html('<iframe src="https://embed.spotify.com/?uri=spotify:user:nanzabananza:playlist:58LCGWBgr1m6DBaRkdeKZN" width="300" height="400" frameborder="0" allowtransparency="true"></iframe>');
+		$('#spotifyPlayer').html('<iframe src="https://embed.spotify.com/?uri=spotify:user:nanzabananza:playlist:58LCGWBgr1m6DBaRkdeKZN" width="300" height="350" frameborder="0" allowtransparency="true"></iframe>');
 
 	}
 }

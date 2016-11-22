@@ -6,17 +6,28 @@ body {
   color: white;
 }
 
+.title {
+	font-size: 50px;
+	margin: 2% auto;
+	font-weight: bold;
+}
+
 div.pageCenter{
 	display: inline-block;
-	/*padding-left: 5%;*/
 	width: 45%;
+}
+
+.footer {
+	padding: 2%;
+	color: black;
+}
+
+#name {
+	color: black;
 }
 
 #cityinfo {
 	vertical-align: top;
-/*	position:relative; 
-	top:50%; 
-	transform:translate(0,50%);*/
 }
 
 h1 {
@@ -27,4 +38,9 @@ h1 {
 
 #spotifyPlayer {
 	padding: 15px;
+}
+
+a {
+	text-decoration: none;
+	color: white;
 }
